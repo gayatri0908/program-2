@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 60px;
+            color: white;
+            text-shadow: 0 0 10px cyan, 0 0 20px blue;
+            animation: glow 2s infinite alternate;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: #00e5ff;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00e5ff;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #00bcd4;
+            color: white;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px cyan, 0 0 20px blue;
+            }
+            to {
+                text-shadow: 0 0 20px yellow, 0 0 40px red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello World 🌍</h1>
+        <p>Welcome to HTML Programming!</p>
+        <button onclick="alert('Hello World!')">Click Me</button>
+    </div>
+
+</body>
+</html>
